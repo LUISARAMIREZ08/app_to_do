@@ -1,0 +1,237 @@
+body {
+    padding-top: 56px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 4px 7px 8px 8px;
+    padding-top: 1.25rem;
+    background-color: #3DB6E3;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.navbar-container .logo {
+    display: flex;
+    align-items: center;
+    margin-right: 30px; 
+    margin-left: 40px;
+}
+
+.logo img {
+    height: 53px;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.app-name {
+    font-size: 38px;
+    margin: 0;
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.app-name:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.navbar-container ul {
+    display: flex;
+    justify-self: start;
+    align-items: center;
+    gap: 24px;
+    margin: 0;
+}
+
+.navbar-container ul li{
+    list-style: none;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    margin-left: 0;
+    margin-top: 5px;
+}
+
+.navbar-container ul li a{
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+}
+
+.navbar-container ul li a:hover{
+    color: #DB00A3;
+}
+
+.btn-container {
+    display:grid;
+    grid-template-columns: 1fr 2fr; 
+    grid-gap: 10px; /* Espacio entre los botones */
+    margin-left: 400px; /* Añade un margen derecho */
+}
+
+.login{
+    background-color: #150097;
+    position: relative;
+    padding: 10px 20px; /* Añade un relleno al botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 14px; /* Añade esquinas redondeadas al botón */
+    color: white; /* Establece el color del texto del botón */
+    font-size: 16px; /* Establece el tamaño del texto del botón */
+    cursor: pointer; /* Establece el cursor del ratón al pasar por encima del botón */
+    font-family: "Roboto", sans-serif;
+    white-space: nowrap;
+}
+
+.login:hover {
+    background-color: #DB00A3 ; /* Cambia el color de fondo del botón al pasar por encima */
+    transform: scale(1.1); 
+    transition: 0.3s; /* cambia el tamaño del botón al pasar por encima */
+}
+
+.register{
+    background-color: #150097;
+    position: relative;
+    padding: 10px 20px; /* Añade un relleno al botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 14px; /* Añade esquinas redondeadas al botón */
+    color: white; /* Establece el color del texto del botón */
+    font-size: 16px; /* Establece el tamaño del texto del botón */
+    cursor: pointer; /* Establece el cursor del ratón al pasar por encima del botón */
+    font-family: "Roboto", sans-serif;
+}
+
+.register:hover {
+    background-color: #DB00A3 ; /* Cambia el color de fondo del botón al pasar por encima */
+    transform: scale(1.1); 
+    transition: 0.3s; /* cambia el tamaño del botón al pasar por encima */
+}
+
+.logout{
+    background-color: #150097;
+    position: relative;
+    padding: 10px 20px; /* Añade un relleno al botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 14px; /* Añade esquinas redondeadas al botón */
+    color: white; /* Establece el color del texto del botón */
+    font-size: 16px; /* Establece el tamaño del texto del botón */
+    cursor: pointer; /* Establece el cursor del ratón al pasar por encima del botón */
+    font-family: "Roboto", sans-serif;
+    white-space: nowrap;
+}
+
+.logout:hover {
+    background-color: #DB00A3 ; /* Cambia el color de fondo del botón al pasar por encima */
+    transform: scale(1.1); 
+    transition: 0.3s; /* cambia el tamaño del botón al pasar por encima */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro {
+    margin-top: 150px;
+    margin-right: 20px; /* Reduje el margen derecho */
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 100%;
+    text-align: justify;
+    width: 60%; /* Ajusté el ancho del texto */
+    -webkit-animation: scale-up-top 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: scale-up-top 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.texto {
+    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+    color: #858585;
+}
+
+@keyframes scale-up-top {
+    0% {
+      transform: scale(0);
+      transform-origin: center top;
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: center top;
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes scale-up-top {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      -webkit-transform-origin: center top;
+      transform-origin: center top;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform-origin: center top;
+      transform-origin: center top;
+      opacity: 1;
+    }
+  }
+
+.cuaderno img {
+    width: 300px;
+    height: auto;
+    margin-top: 120px;
+    -webkit-animation: scale-up-top 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: scale-up-top 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.empezar{
+    background-color: #150097  ;
+    padding: 10px 20px; /* Añade un relleno al botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 14px; /* Añade esquinas redondeadas al botón */
+    color: white; /* Establece el color del texto del botón */
+    font-size: 16px; /* Establece el tamaño del texto del botón */
+    cursor: pointer; /* Establece el cursor del ratón al pasar por encima del botón */
+    font-family: "Roboto", sans-serif;
+    margin-top: 15px;
+}
+
+.empezar:hover {
+    background-color: #DB00A3; /* Cambia el color de fondo del botón al pasar por encima */
+    transform: scale(1.1); /* cambia el tamaño del botón al pasar por encima */
+    transition: 0.3s;
+}
+
+.add-container {
+    display: flex;
+    justify-content: start;
+}
+
+.add{
+    background-color: #150097;
+    position: relative;
+    padding: 10px 20px; /* Añade un relleno al botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 14px; /* Añade esquinas redondeadas al botón */
+    color: white; /* Establece el color del texto del botón */
+    font-size: 16px; /* Establece el tamaño del texto del botón */
+    cursor: pointer; /* Establece el cursor del ratón al pasar por encima del botón */
+    font-family: "Roboto", sans-serif;
+    top: 50px; /* Coloca el botón en la esquina superior derecha */
+}
