@@ -26,4 +26,4 @@ Una vez que se haya clonado el repositorio, se abre la terminal y se ejecutan lo
 ***
 ## Inicia el servidor de desarrollo
 Ejecuta el siguiente comando en tu terminal:
-    **python manage.py runserver**
+  -  **python manage.py runserver**
