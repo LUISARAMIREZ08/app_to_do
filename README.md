@@ -25,5 +25,5 @@ Una vez que se haya clonado el repositorio, se abre la terminal y se ejecutan lo
     **PS C:\> <venv>\app_to_do\venv\Scripts\Activate.ps1**
 ***
 ## Inicia el servidor de desarrollo
-  - python manage.py runserver
-
+Ejecuta el siguiente comando en tu terminal:
+    **python manage.py runserver**
