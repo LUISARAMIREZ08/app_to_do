@@ -27,3 +27,9 @@ Una vez que se haya clonado el repositorio, se abre la terminal y se ejecutan lo
 ## Inicia el servidor de desarrollo
 Ejecuta el siguiente comando en tu terminal:
   -  **python manage.py runserver**
+
+Abre tu navegador web y ve a http://127.0.0.1:8000/ para acceder a la aplicación.
+
+## Tecnologías Utilizadas
+- Django: Framework de desarrollo web de alto nivel escrito en Python.
+- HTML/CSS: Para la estructura y el estilo de las páginas web.
