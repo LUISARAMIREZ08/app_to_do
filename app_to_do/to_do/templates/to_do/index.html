@@ -1,0 +1,19 @@
+{% extends 'to_do/main.html' %}
+{% load static %}
+{% block content %}
+<nav class="container">
+    <div class="intro">
+        <h1>Planifica tu día,</h1>
+        <h1>haz que cada momento cuente</h1>
+        <h6 class="texto">Organiza tu día de manera eficiente con nuestra aplicación fácil de usar. Desde la gestión de tareas hasta la planificación de eventos, estamos aquí para ayudarte a maximizar tu productividad y aprovechar al máximo cada momento.</h6>
+        <div class="btn-empezar">
+            <a href="{% url 'login' %}">
+                <button class="empezar">Empezar</button>
+            </a>
+        </div>
+    </div>
+    <div class="cuaderno">
+        <img src="{% static 'images/cuaderno.svg' %}" alt="Hero">
+    </div>
+</nav>
+{% endblock content %}

@@ -1,0 +1,41 @@
+{% extends 'to_do/main.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="{% static 'css/add.css' %}">
+<nav class="container">
+    <div class="text-container">
+        <h2 class="tittle">Añadir Tareas</h2>
+        <p class="subtittle">Administra tus actividades diarias. Marca como completadas las tareas una vez finalizadas.</p>
+        {% for task in to_do_task %}
+                <div class="div-checkbox">
+                    <div class="checkbox-container">
+                    <form method="post" action="{% url 'update_task_status' %}">
+                        {% csrf_token %}
+                        <div class="btn-task" data-task-id="{{ task.id }}">
+                            <div class="box-text">
+                                <input type="checkbox" name="task_id" id="task_{{ task.id }}" {% if task.completed %}checked{% endif %} onchange="this.form.submit()">
+                                <input type="hidden" name="task_id" value="{{ task.id }}">
+                                <label for="task_{{ task.id }}" {% if task.completed %}class="completed"{% endif %}>{{ task.title }}</label>
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+                    <form method="post" action="{% url 'delete_task' %}">
+                        {% csrf_token %}
+                        <input type="hidden" name="task_id" value="{{ task.id }}">
+                        <button type="submit" class="material-symbols-outlined delete-task" data-task-id="{{ task.id }}">delete</button>
+                    </form>
+                </div>
+        {% endfor %}
+        <div class="add-container">
+            <form method="post">
+                {% csrf_token %}
+                <input type="text" name="title" placeholder="Escribe una nueva tarea" class="task-input">
+                <input class="add-TaskBtn" type="submit" value="Agregar tarea">
+            </form>
+        </div>
+    </div>
+</nav>
+
+{% endblock content %}

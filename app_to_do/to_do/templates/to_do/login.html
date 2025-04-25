@@ -1,0 +1,44 @@
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lilita+One&family=Patua+One&family=Protest+Strike&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</html>
+<body>
+    <div class="login">
+        <div class="form-container">
+            <div class="logo">
+                <a href="{% url 'index' %}"> 
+                    <img src="{% static 'images/logo.svg' %}" alt="Logo">
+                </a>
+            </div>
+            <a href="{% url 'index' %}" class="app-name">DayLu</a>
+            <h1 class="title"> Inicio de Seción</h1>
+            <p class="subtittle">Ingrese su usuario y contraseña</p>
+            {% if error_message %}
+                <p style="color: #DB00A3;font-family: 'Roboto', sans-serif;">{{ error_message }}</p>
+            {% endif %}
+            <form class="form" method="post">
+                {% csrf_token %}
+                <label for="username" class="label"> Usuario</label>
+                <input type="text" id="username" name="username" required class="input input-password">
+
+                <label for="password" class="label"> Contraseña</label>
+                <input type="password" id="password" name='password' required placeholder="***********" class="input input-password">
+
+                <input type="submit" value="Confirmar" 
+                class="primary-button login-button">
+            </form>
+            <a href="{% url 'register' %}" class="registro-opcional">Regístrate si no tienes una cuenta en DayLu</a>
+        </div>
+
+    </div>
+</body>
+</html>
+{% endblock content %}
