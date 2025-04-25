@@ -4,7 +4,7 @@ body {
 
 .navbar-container {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     padding: 4px 7px 8px 8px;
     padding-top: 1.25rem;
@@ -129,6 +129,7 @@ body {
     cursor: pointer; /* Establece el cursor del ratón al pasar por encima del botón */
     font-family: "Roboto", sans-serif;
     white-space: nowrap;
+    margin-left: 400px; /* Añade un margen izquierdo */
 }
 
 .logout:hover {
