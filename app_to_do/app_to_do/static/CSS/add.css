@@ -32,26 +32,25 @@ body {
 .checkbox-container {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 10px; /* Espacio entre el checkbox y el texto */
+    margin-right: 10px; 
 }
 
 /* Estilos para el propio checkbox */
 .checkbox-container input[type="checkbox"] {
-    /* Estilos para el checkbox en sí */
-    width: 25px; /* Ancho del checkbox */
-    height: 25px; /* Altura del checkbox */
-    margin: 0; /* Elimina cualquier margen predeterminado */
-    padding: 0; /* Elimina cualquier relleno predeterminado */
-    border: 2px solid #6588FF; /* Borde del checkbox */
-    border-radius: 100px; /* Borde redondeado */
-    appearance: none; /* Elimina los estilos predeterminados del navegador */
-    cursor: pointer; /* Establece el cursor del ratón al pasar por encima del checkbox */
-    transition : 0.3s; /* Añade una transición suave al checkbox */
+    width: 25px; 
+    height: 25px; 
+    margin: 0; 
+    padding: 0; 
+    border: 2px solid #6588FF; 
+    border-radius: 100px; 
+    appearance: none; 
+    cursor: pointer; 
+    transition : 0.3s; 
 }
 
-/* Estilos para el estado "checked" del checkbox */
+
 .checkbox-container input[type="checkbox"]:checked {
-    background-color:#DB00A3; /* Cambia el color de fondo cuando está marcado */
+    background-color:#DB00A3; 
 }
 .btn-task{
     background-color: white;
@@ -65,8 +64,8 @@ body {
     font-size: 16px;
     font-family: "Roboto", sans-serif;
     margin-bottom: 12px;
-    border-color: #6588FF; /* Cambia el color del borde */
-    border-width: 2px; /* Ajusta el grosor del borde si es necesario */
+    border-color: #6588FF; 
+    border-width: 2px; 
     border-style: solid;
 }
 
@@ -76,7 +75,7 @@ body {
     align-items: center;
     width: 100%;
     align-items: center;
-    column-gap: 10px; /* Espacio entre los elementos del contenedor */
+    column-gap: 10px; 
 }
 
 .task-title {
@@ -93,12 +92,12 @@ body {
     font-size: 16px;
     font-family: "Roboto", sans-serif;
     margin-bottom: 12px;
-    border-color: #6588FF; /* Cambia el color del borde */
-    border-width: 2px; /* Ajusta el grosor del borde si es necesario */
-    border-style: solid; /* Especifica el estilo del borde */
+    border-color: #6588FF; 
+    border-width: 2px;
+    border-style: solid; 
 }
 .task-input::placeholder {
-    color: #999; /* Cambia el color del marcador de posición */
+    color: #999; 
 }
 
 .add-TaskBtn{
@@ -117,7 +116,7 @@ body {
 
 .add-TaskBtn:hover{
     background-color: #DB00A3;
-    transform: scale(1.1); /* cambia el tamaño del botón al pasar por encima */
+    transform: scale(1.1); 
     transition: 0.3s;
 }
 
@@ -135,7 +134,7 @@ body {
 
 .material-symbols-outlined:hover {
     color:#DB00A3;
-    transform: scale(1.1); /* cambia el tamaño del botón al pasar por encima */
+    transform: scale(1.1); 
     transition: 0.3s;
 }
 

@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4px 7px 8px 8px;
+    padding: 1rem 4rem;
     padding-top: 1.25rem;
     background-color: #3DB6E3;
     position: fixed;
@@ -18,8 +18,6 @@ body {
 .navbar-container .logo {
     display: flex;
     align-items: center;
-    margin-right: 30px; 
-    margin-left: 40px;
 }
 
 .logo img {
@@ -75,67 +73,68 @@ body {
 }
 
 .btn-container {
-    display:grid;
-    grid-template-columns: 1fr 2fr; 
-    grid-gap: 10px; /* Espacio entre los botones */
-    margin-left: 400px; /* Añade un margen derecho */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .login{
     background-color: #150097;
     position: relative;
-    padding: 10px 20px; /* Añade un relleno al botón */
-    border: none; /* Elimina el borde del botón */
-    border-radius: 14px; /* Añade esquinas redondeadas al botón */
-    color: white; /* Establece el color del texto del botón */
-    font-size: 16px; /* Establece el tamaño del texto del botón */
-    cursor: pointer; /* Establece el cursor del ratón al pasar por encima del botón */
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 14px;
+    color: white;
+    font-size: 16px; 
+    cursor: pointer; 
     font-family: "Roboto", sans-serif;
     white-space: nowrap;
 }
 
 .login:hover {
-    background-color: #DB00A3 ; /* Cambia el color de fondo del botón al pasar por encima */
+    background-color: #DB00A3 ; 
     transform: scale(1.1); 
-    transition: 0.3s; /* cambia el tamaño del botón al pasar por encima */
+    transition: 0.3s; 
 }
 
 .register{
     background-color: #150097;
     position: relative;
-    padding: 10px 20px; /* Añade un relleno al botón */
-    border: none; /* Elimina el borde del botón */
-    border-radius: 14px; /* Añade esquinas redondeadas al botón */
-    color: white; /* Establece el color del texto del botón */
-    font-size: 16px; /* Establece el tamaño del texto del botón */
-    cursor: pointer; /* Establece el cursor del ratón al pasar por encima del botón */
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 14px; 
+    color: white; 
+    font-size: 16px; 
+    cursor: pointer; 
     font-family: "Roboto", sans-serif;
 }
 
 .register:hover {
-    background-color: #DB00A3 ; /* Cambia el color de fondo del botón al pasar por encima */
+    background-color: #DB00A3 ; 
     transform: scale(1.1); 
-    transition: 0.3s; /* cambia el tamaño del botón al pasar por encima */
+    transition: 0.3s; 
 }
 
 .logout{
     background-color: #150097;
     position: relative;
-    padding: 10px 20px; /* Añade un relleno al botón */
-    border: none; /* Elimina el borde del botón */
-    border-radius: 14px; /* Añade esquinas redondeadas al botón */
-    color: white; /* Establece el color del texto del botón */
-    font-size: 16px; /* Establece el tamaño del texto del botón */
-    cursor: pointer; /* Establece el cursor del ratón al pasar por encima del botón */
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 14px; 
+    color: white;
+    font-size: 16px; 
+    cursor: pointer; 
     font-family: "Roboto", sans-serif;
     white-space: nowrap;
-    margin-left: 400px; /* Añade un margen izquierdo */
+    margin-left: 400px; 
 }
 
 .logout:hover {
-    background-color: #DB00A3 ; /* Cambia el color de fondo del botón al pasar por encima */
+    background-color: #DB00A3 ; 
     transform: scale(1.1); 
-    transition: 0.3s; /* cambia el tamaño del botón al pasar por encima */
+    transition: 0.3s; 
 }
 
 .container {
@@ -145,13 +144,13 @@ body {
 
 .intro {
     margin-top: 150px;
-    margin-right: 20px; /* Reduje el margen derecho */
+    margin-right: 20px; 
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
     font-size: 100%;
     text-align: justify;
-    width: 60%; /* Ajusté el ancho del texto */
+    width: 60%;
     -webkit-animation: scale-up-top 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	animation: scale-up-top 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
@@ -203,19 +202,19 @@ body {
 
 .empezar{
     background-color: #150097  ;
-    padding: 10px 20px; /* Añade un relleno al botón */
-    border: none; /* Elimina el borde del botón */
-    border-radius: 14px; /* Añade esquinas redondeadas al botón */
-    color: white; /* Establece el color del texto del botón */
-    font-size: 16px; /* Establece el tamaño del texto del botón */
-    cursor: pointer; /* Establece el cursor del ratón al pasar por encima del botón */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 14px;
+    color: white; 
+    font-size: 16px; 
+    cursor: pointer; 
     font-family: "Roboto", sans-serif;
     margin-top: 15px;
 }
 
 .empezar:hover {
-    background-color: #DB00A3; /* Cambia el color de fondo del botón al pasar por encima */
-    transform: scale(1.1); /* cambia el tamaño del botón al pasar por encima */
+    background-color: #DB00A3; 
+    transform: scale(1.1); 
     transition: 0.3s;
 }
 
@@ -236,3 +235,4 @@ body {
     font-family: "Roboto", sans-serif;
     top: 50px; /* Coloca el botón en la esquina superior derecha */
 }
+

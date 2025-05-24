@@ -119,7 +119,7 @@
 
 .primary-button:hover{
     background-color: #150097;
-    transform: scale(1.1); /* cambia el tamaño del botón al pasar por encima */
+    transform: scale(1.1); 
     transition: 0.3s;
 }
 

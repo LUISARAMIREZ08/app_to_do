@@ -29,7 +29,6 @@
             </div>
             {% if user.is_authenticated %}
             <ul>
-                <li><a href="{% url 'add' %}">Añadir</a></li>
                 <li><a href="{% url 'completed_tasks' %}">Tareas Completadas</a></li>
             </ul> 
             <div class="btn-container">
@@ -37,11 +36,7 @@
                         <button class="logout">Cerrar Sesión</button>
                     </a>
             </div>
-            {% else %}
-            <ul>
-                <li><a href="{% url 'plan' %}">Planea tu dia</a></li>
-                <li><a href="#">Importante</a></li>
-            </ul> 
+            {% else %} 
             <div class="btn-container">
                     <a href="{% url 'login'%}">
                         <button class="login" >Iniciar Sesión</button>
